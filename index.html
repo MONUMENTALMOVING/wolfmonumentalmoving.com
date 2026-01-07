@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monumental Moving LLC | LTL • Moving • Storage</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f5f7fa;
+        color: #222;
+    }
+
+    header {
+        background: #0a3d62;
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    header img {
+        max-width: 180px;
+        margin-bottom: 15px;
+    }
+
+    header h1 {
+        font-size: 2.4rem;
+        margin: 10px 0;
+        font-weight: 800;
+    }
+
+    header p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+    }
+
+    .cta-buttons {
+        margin-top: 20px;
+    }
+
+    .cta-buttons a {
+        display: inline-block;
+        padding: 14px 26px;
+        margin: 8px;
+        background: #38ada9;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+
+    .cta-buttons a:hover {
+        background: #079992;
+    }
+
+    section {
+        padding: 50px 20px;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2rem;
+        color: #0a3d62;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+
+    .service-box {
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .service-box h3 {
+        margin-top: 0;
+        color: #0a3d62;
+    }
+
+    .pricing-table {
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .pricing-table table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .pricing-table th, .pricing-table td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+
+    form {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        max-width: 700px;
+        margin: auto;
+    }
+
+    form input, form textarea, form select {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+
+    form button {
+        width: 100%;
+        padding: 14px;
+        background: #0a3d62;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    form button:hover {
+        background: #07406e;
+    }
+
+    footer {
+        background: #0a3d62;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        font-size: 0.9rem;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <!-- Replace with your logo file -->
+    <img src="logo.png" alt="Monumental Moving Logo">
+    <h1>Monumental Moving LLC</h1>
+    <p>LTL • Residential & Commercial Moving • Storage & Holding</p>
+
+    <div class="cta-buttons">
+        <a href="tel:+18136942014">📞 Call Us Now</a>
+        <a href="#quote">Get a Fast Quote</a>
+    </div>
+</header>
+
+<section>
+    <h2>Our Services</h2>
+
+    <div class="services">
+        <div class="service-box">
+            <h3>Residential & Commercial Moving</h3>
+            <p>Full-service or labor-only moving for apartments, homes, and offices. Packing, loading, transport, and unloading options available.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>LTL Freight</h3>
+            <p>Flexible, affordable pallet and partial-load freight for small businesses, contractors, and regional deliveries.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Storage & Holding</h3>
+            <p>Short-term storage and overnight truck holding for customers who need flexible timing between pickup and delivery.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Pricing</h2>
+
+    <div class="pricing-table">
+        <table>
+            <tr><th>Service</th><th>Rate</th></tr>
+            <tr><td>2 Movers + Truck</td><td>$145/hr (3 hr min)</td></tr>
+            <tr><td>3 Movers + Truck</td><td>$185/hr (3 hr min)</td></tr>
+            <tr><td>Labor Only (2 movers)</td><td>$115/hr (2 hr min)</td></tr>
+            <tr><td>Local LTL (≤50 miles)</td><td>From $175 per pallet</td></tr>
+            <tr><td>Regional LTL (50–250 miles)</td><td>$2.25 per loaded mile</td></tr>
+            <tr><td>Short-Term Storage</td><td>From $150/mo</td></tr>
+        </table>
+    </div>
+</section>
+
+<section id="quote">
+    <h2>Get a Quote</h2>
+
+    <form action="https://formspree.io/f/yourformid" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="text" name="phone" placeholder="Phone Number" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+
+        <select name="service">
+            <option value="Residential Move">Residential Move</option>
+            <option value="Commercial Move">Commercial Move</option>
+            <option value="LTL Freight">LTL Freight</option>
+            <option value="Storage">Storage</option>
+            <option value="Combination">Combination</option>
+        </select>
+
+        <textarea name="details" rows="5" placeholder="Tell us about your move or freight load"></textarea>
+
+        <button type="submit">Submit Quote Request</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 MONUMENTAL MOVING LLC — All Rights Reserved  
+</footer>
+
+</body>
+</html>
